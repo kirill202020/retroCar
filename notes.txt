@@ -1,0 +1,28 @@
+1698 1680 1440 1200 1080 1024 768 425 375 map - iframe ★☆
+
+<!-- <div class="card">
+			<img src="img/user.png" alt="" class="profile-img" />
+			<div class="card-body">
+				<p class="card_name">Иван К.</p>
+				<div class="card_span-box">
+					<span class="grade">★★★☆☆</span>
+					<span class="date">15.03.2025</span>
+				</div>
+				<div class="card_main-text">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+						reiciendis amet rem in neque dicta dolores non dolor eveniet
+						repellat?
+					</p>
+				</div>
+			</div>
+		</div> -->
+
+
+
+Питання:
+Що робити на об\єднат онлайн в деталях про машини під хедером
+
+Як вибирати  машину у замовленні
+
+Що з рецензіями

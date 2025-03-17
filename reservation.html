@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<img class="choose_head_bg" src="img/choose_head_bg.png" alt="" />
+		<main class="choose-container">
+			<section class="choose-car">
+				<h2 class="choose-section-title">1. Výběr vozu</h2>
+				<div class="choose-area"></div>
+			</section>
+			<section class="choose-time">
+				<h2 class="choose-section-title">2. Výběr data a času</h2>
+				<div class="choose-date-box">
+					<div class="choose-date">
+						<p class="choose_date_label">Datum předložení</p>
+						<input class="date_input" type="date" />
+					</div>
+					<div class="choose-date">
+						<p class="choose_date_label">Doba krmení</p>
+						<input class="date_input" type="datetime-local" />
+					</div>
+					<div class="choose-date">
+						<p class="choose_date_label">Doba návratu</p>
+						<input class="date_input" type="datetime-local" />
+					</div>
+				</div>
+			</section>
+			<section class="choose-place">
+				<h2 class="choose-section-title">3. Dodávka vozu</h2>
+				<div class="choose-place-box">
+					<p class="choose_date_label">Kam se vydat</p>
+					<textarea class="choose_date_area" rows="4" name="" id=""></textarea>
+				</div>
+			</section>
+			<section class="choose-info">
+				<h2 class="choose-section-title">4. Objednávání online</h2>
+				<div class="choose-info-box">
+					<div class="info">
+						<p class="choose_date_label">Vaše jméno</p>
+						<input class="info_input" type="text" />
+					</div>
+					<div class="info">
+						<p class="choose_date_label">Vaše telefonní číslo</p>
+						<input class="info_input" type="text" />
+					</div>
+					<div class="info">
+						<p class="choose_date_label">Váše e-mail</p>
+						<input class="info_input" type="text" />
+					</div>
+				</div>
+				<div class="comment-place">
+					<p class="choose_date_label">Komentář</p>
+					<textarea class="choose_info_area" rows="4"></textarea>
+				</div>
+				<div class="btn thema-btn order-btn">
+					<a href="#">REZERVACE VOZIDLA</a>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer" class="footer">
+			<div class="footer_map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.038611249179!2d12.876223776390257!3d50.23518357155191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a0993fddd231f7%3A0x745ea951e197a5fe!2zVsOtdMSbem7DoSA1MEEsIDM2MCAwMSBLYXJsb3Z5IFZhcnkgMSwg0KfQtdGF0ZbRjw!5e0!3m2!1suk!2spl!4v1742114393388!5m2!1suk!2spl"
+					style="border: 0"
+					width="260%"
+					height="600px"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+			<div class="footer_contact">
+				<h3>KONTAKTY</h3>
+				<p class="footer_contact_title">Adres</p>
+				<span class="footer_contact_text"
+					>Vítězná 634/50a, Karlovy Vary 36001</span
+				>
+
+				<p class="footer_contact_title">E-mail</p>
+				<span class="footer_contact_text contact_text-email"
+					>vaclavtomasek@centrum.cz</span
+				>
+
+				<p class="footer_contact_title">Tel:</p>
+				<span class="footer_contact_text contact_text-phone"
+					>+420-725519222</span
+				>
+			</div>
+		</footer>
+	</body>
+</html>
