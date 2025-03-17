@@ -164,8 +164,9 @@ nav {
 }
 .thema-btn {
 	margin: 0 auto;
-	width: 300px;
-	padding: 11px 55px;
+	width: fit-content;
+
+	padding: 11px 75px;
 	text-transform: uppercase;
 	border: #000 1px solid;
 	font-size: 48px;
@@ -800,13 +801,22 @@ main {
 }
 
 @media (max-width: 768px) {
-	.info-box {
-		margin: 0;
-	}
 	.info-box_left {
 		margin: 0;
+		width: 100%;
 	}
 	.info-box_right {
+		padding: 30px;
 		width: 100%;
+	}
+}
+
+@media (max-width: 720px) {
+	.thema-btn {
+		width: fit-content;
+		font-size: 32px;
+	}
+	.info-box {
+		margin-left: 0;
 	}
 }
