@@ -9,7 +9,7 @@
 	<body>
 		<div class="modal"></div>
 		<header class="header">
-			<nav>
+			<nav class="standard_nav">
 				<ul class="nav_ul">
 					<li class="nav_ul_li"><a href="#about">O NÁS</a></li>
 					<li class="nav_ul_li">
@@ -24,6 +24,36 @@
 					<div class="online-letter"><a href="#">ONLINE APLIKACE</a></div>
 				</div>
 
+				<div id="socials">
+					<a href="#"><img src="img/icon-fb.svg" alt="" /></a>
+					<a href="#"><img src="img/icon-ig.svg" alt="" /></a>
+				</div>
+			</nav>
+
+			<nav class="burger" role="navigation">
+				<div id="menuToggle">
+					<input type="checkbox" id="menuCheckbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+						<li class="nav_ul_li"><a href="#about">O NÁS</a></li>
+						<li class="nav_ul_li">
+							<a href="agreement.html">PODMÍNKY ORENDY</a>
+						</li>
+						<li class="nav_ul_li"><a href="#catalogue">AUTOPARK</a></li>
+						<li class="nav_ul_li"><a href="#">SLUŽBY</a></li>
+						<li class="nav_ul_li"><a href="#footer">KONTAKTY</a></li>
+						<li class="nav_ul_li">
+							<div class="phones-box">
+								<p class="phone">+420 725519222</p>
+								<div onclick="openModal()" class="online-letter">
+									<a href="#">ONLINE APLIKACE</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 				<div id="socials">
 					<a href="#"><img src="img/icon-fb.svg" alt="" /></a>
 					<a href="#"><img src="img/icon-ig.svg" alt="" /></a>

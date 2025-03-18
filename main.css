@@ -363,7 +363,7 @@ button:disabled {
 	background: #b3a37f;
 	position: fixed;
 	top: 50px;
-	left: 150px;
+	left: 50px;
 	max-width: 1200px;
 	display: none;
 	flex-direction: column;
@@ -681,6 +681,34 @@ main {
 
 /* ADD BURGER MENU HEADER ON 1280px */
 @media (max-width: 1280px) {
+	.modal {
+		background: #b3a37f;
+		position: fixed;
+		top: 20px;
+		left: 100px;
+		max-width: 800px;
+		gap: 20px;
+	}
+	.modal h2 {
+		font-size: 28px;
+	}
+	.modal textarea {
+		width: 95%;
+		padding: 10px 15px;
+	}
+	.modal input {
+		padding: 10px 15px;
+	}
+	.standard_nav {
+		display: none;
+	}
+	.burger {
+		display: flex !important;
+		justify-content: space-between;
+	}
+	#socials {
+		margin-left: auto;
+	}
 	.footer_contact {
 		margin-right: 80px;
 	}
@@ -752,11 +780,32 @@ main {
 	}
 }
 @media (max-width: 1000px) {
+	.modal {
+		z-index: 1000;
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		max-width: 800px;
+		gap: 20px;
+	}
+	.modal h2 {
+		font-size: 28px;
+	}
+	.modal textarea {
+		width: 95%;
+		padding: 10px 15px;
+		font-size: 16px;
+	}
+	.modal input {
+		font-size: 16px;
+		width: 60%;
+		padding: 15px 15px;
+	}
+	.modal-btn {
+		font-size: 24px;
+	}
 	body {
 		margin: 0 auto;
-	}
-	.header {
-		display: none;
 	}
 	.footer,
 	.about-box {
@@ -800,7 +849,21 @@ main {
 	}
 }
 
+@media (max-width: 900px) {
+	.slider-container {
+		transform: translateX(100px);
+	}
+}
+
 @media (max-width: 768px) {
+	.modal {
+		z-index: 1000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		max-width: 800px;
+		gap: 20px;
+	}
 	.info-box_left {
 		margin: 0;
 		width: 100%;
@@ -816,7 +879,159 @@ main {
 		width: fit-content;
 		font-size: 32px;
 	}
+	.modal-btn {
+		font-size: 24px;
+	}
 	.info-box {
 		margin-left: 0;
 	}
+}
+@media (max-width: 600px) {
+	.btn-close {
+		width: 40px;
+		height: 40px;
+	}
+	.phones-box {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}
+	.phone {
+		color: #232323;
+	}
+}
+@media (max-width: 545px) {
+	.modal h2 {
+		font-size: 20px;
+	}
+	.slider-container {
+		transform: translateX(20px);
+	}
+}
+@media (max-width: 425px) {
+	.modal h2 {
+		font-size: 16px;
+	}
+	.modal input {
+		padding: 15px 10px;
+		font-size: 10px;
+	}
+}
+
+/* BURGER MENU */
+
+.burger {
+	display: none;
+}
+
+#menuToggle {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 10px;
+
+	z-index: 1;
+
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#menuToggle a {
+	text-decoration: none;
+	color: #232323;
+
+	transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+	color: tomato;
+}
+
+#menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+
+	cursor: pointer;
+
+	opacity: 0;
+	z-index: 2;
+
+	-webkit-touch-callout: none;
+}
+
+#menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+
+	background: #cdcdcd;
+	border-radius: 3px;
+
+	z-index: 1;
+
+	transform-origin: 4px 0px;
+
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+		background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+	position: absolute;
+	max-width: 600px;
+	width: 100vw;
+	margin: -100px 0 0 -50px;
+	padding: 50px;
+	padding-top: 125px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	background: #ededed;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(-100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+	padding: 10px 0;
+	font-size: 22px;
+}
+
+#menu li label {
+	cursor: pointer;
+}
+
+#menuToggle input:checked ~ ul {
+	transform: none;
 }
