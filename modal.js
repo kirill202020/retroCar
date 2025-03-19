@@ -9,7 +9,7 @@ function openModal() {
     <h2>ONLINE APLIKACE</h2>
     <img  src="img/close.png" class="btn-close">
     </div>
-    <form action="">
+    <form action="" method="POST">
     <div class="inputs">
     <input type="text" placeholder="Jméno" />
     <input type="text" placeholder="Telefon" />
