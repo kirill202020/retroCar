@@ -819,6 +819,11 @@ main {
 	}
 }
 @media (max-width: 1000px) {
+	.choose-area {
+		flex-direction: column;
+		gap: 50px;
+		max-width: 100%;
+	}
 	.modal {
 		z-index: 1000;
 		position: fixed;
@@ -1265,4 +1270,28 @@ main {
 
 #menuToggle input:checked ~ ul {
 	transform: none;
+}
+
+/* SELECT */
+
+.choose-area {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.choose-name {
+	font-size: 32px;
+}
+.choose-img {
+	width: 500px;
+}
+.choose-select {
+	padding: 10px 15px;
+	font-size: 20px;
+	background: #b3a37f;
+	margin-top: 20px;
+}
+.choose_label {
+	font-size: 24px;
 }

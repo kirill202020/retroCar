@@ -12,10 +12,15 @@
 			<section class="choose-car">
 				<h2 class="choose-section-title">1. Výběr vozu</h2>
 				<div class="choose-area">
-					<p class="choose-name"></p>
-					<img class="choose-img" src="" alt="" />
+					<p class="choose-name">Volkswagen Type 1</p>
+					<img class="choose-img" src="img/volkswagen-1.png" alt="" />
 				</div>
-				<select onchange="" class="choose-select"></select>
+				<label for="type" class="choose_label">Výběr vozu</label><br />
+				<select onchange="change()" name="type" class="choose-select">
+					<option value="volkswagenT1">Volkswagen Type 1</option>
+					<option value="volkswagenT2">Volkswagen Type 2</option>
+					<option value="porsche">Porsche-356</option>
+				</select>
 			</section>
 			<section class="choose-time">
 				<h2 class="choose-section-title">2. Výběr data a času</h2>
@@ -97,5 +102,7 @@
 				>
 			</div>
 		</footer>
+
+		<script src="select.js"></script>
 	</body>
 </html>
