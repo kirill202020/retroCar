@@ -183,6 +183,7 @@ nav {
 	text-align: center;
 	padding: 147px 80px 80px;
 	background: url('img/text-bg.png') no-repeat;
+	background-size: cover;
 	margin-bottom: 100px;
 }
 .text-block_text {
