@@ -23,9 +23,7 @@ function openModal() {
     placeholder="Komentář k objednávce"
     ></textarea>
     </form>
-    <div onclick="close()" class="btn thema-btn modal-btn">
-    <a href="#">odeslat</a>
-    </div> 
+    <a  onclick="close()" class="btn thema-btn modal-btn" href="#">odeslat</a>
     `
 }
 btnLetter.addEventListener('click', () => {
@@ -49,9 +47,8 @@ btnLetter.addEventListener('click', () => {
     placeholder="Komentář k objednávce"
     ></textarea>
     </form>
-    <div onclick="close()" class="btn thema-btn modal-btn">
-    <a href="#">odeslat</a>
-    </div> 
+        <a  onclick="close()" class="btn thema-btn modal-btn" href="#">odeslat</a>
+
     `
 })
 

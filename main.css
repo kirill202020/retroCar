@@ -7,16 +7,21 @@
 body {
 	font-family: 'Inter', 'sans-serif';
 	background: #b3a37f;
-	max-width: 1920px;
+	max-width: 1680px;
 	margin: 0 auto;
 }
-
 .header {
+	height: 100vh;
+	max-height: 800px;
+}
+.header_main {
 	background: url('img/header_bg.png') no-repeat;
 	background-size: cover;
-	height: 780px;
+	background-position: center;
 }
 .header_agree {
+	background-position: center;
+	background-size: cover;
 	background: url('img/agreement-header-bg.png') no-repeat;
 }
 .header_carInfoT1 {
@@ -67,15 +72,13 @@ nav {
 	padding: 10px;
 	text-transform: uppercase;
 	outline: #fff 1px solid;
+	color: #cecbcb;
+	text-decoration: none;
 }
 .phone {
 	font-size: 20px;
 }
 
-.online-letter a {
-	color: #cecbcb;
-	text-decoration: none;
-}
 .lang-box {
 	height: 50px;
 	display: flex;
@@ -165,6 +168,7 @@ nav {
 	margin-bottom: 62px;
 }
 .thema-btn {
+	display: block;
 	margin: 0 auto;
 	width: fit-content;
 
@@ -173,8 +177,6 @@ nav {
 	border: #000 1px solid;
 	font-size: 48px;
 	text-align: center;
-}
-.thema-btn a {
 	text-decoration: none;
 	color: #000;
 }
@@ -407,6 +409,8 @@ textarea::placeholder {
 	margin: 0;
 	text-align: center;
 	padding: 11px 45px;
+	text-decoration: none;
+	color: #232323;
 }
 .btn-close {
 	display: inline-block;
@@ -434,9 +438,10 @@ textarea::placeholder {
 	width: auto;
 	margin: 0;
 	border-color: #fff;
+	color: #fff;
+	text-decoration: none;
 }
 .carInfo-btn a {
-	color: #fff;
 }
 .main-pic {
 	margin-bottom: 70px;
@@ -508,6 +513,8 @@ textarea::placeholder {
 	font-size: 33px;
 	width: auto;
 	max-width: 30%;
+	text-decoration: none;
+	color: #232323;
 }
 .reserve_img_title {
 	margin-top: 180px;
@@ -749,6 +756,9 @@ main {
 	}
 }
 @media (max-width: 1200px) {
+	.header {
+		height: 70vh;
+	}
 	.about-box_left img {
 		max-width: 650px;
 	}
@@ -820,6 +830,9 @@ main {
 	}
 }
 @media (max-width: 1000px) {
+	.text-block_text {
+		font-size: 24px;
+	}
 	.choose-area {
 		flex-direction: column;
 		gap: 50px;
@@ -953,6 +966,12 @@ main {
 }
 
 @media (max-width: 768px) {
+	.text-block_text {
+		font-size: 20px;
+	}
+	.header {
+		height: 45vh;
+	}
 	.modal {
 		z-index: 1000;
 		position: fixed;
@@ -993,9 +1012,11 @@ main {
 }
 
 @media (max-width: 720px) {
+	.text-block {
+		padding: 40px 50px;
+	}
 	.thema-btn {
 		width: fit-content;
-		font-size: 32px;
 	}
 	.modal-btn {
 		font-size: 24px;
@@ -1006,8 +1027,22 @@ main {
 	.carInfo-btn {
 		font-size: 24px;
 	}
+	.item_header_title {
+		font-size: 28px;
+	}
+	.catalogue_item_header img {
+		max-width: 90%;
+		margin-bottom: 30px;
+	}
+	.thema-btn {
+		font-size: 24px;
+		padding: 11px 40px;
+	}
 }
 @media (max-width: 600px) {
+	.text-block {
+		padding: 40px 30px;
+	}
 	.dot {
 		width: 10px;
 		height: 10px;
@@ -1050,6 +1085,12 @@ main {
 	}
 }
 @media (max-width: 426px) {
+	.thema-btn {
+		font-size: 18px;
+	}
+	.item_header_title {
+		font-size: 18px;
+	}
 	.modal h2 {
 		font-size: 16px;
 	}
@@ -1079,17 +1120,7 @@ main {
 	.about-box_right {
 		font-size: 18px;
 	}
-	.item_header_title {
-		font-size: 28px;
-	}
-	.catalogue_item_header img {
-		max-width: 90%;
-		margin-bottom: 30px;
-	}
-	.thema-btn {
-		font-size: 24px;
-		padding: 11px 40px;
-	}
+
 	.text-block {
 		padding: 50px 10px;
 	}
