@@ -7,6 +7,8 @@
 body {
 	font-family: 'Inter', 'sans-serif';
 	background: #b3a37f;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 .header {
@@ -320,13 +322,16 @@ button:disabled {
 	background-size: cover;
 }
 .footer_map {
-	flex-basis: 20%;
+	flex-basis: 55%;
 }
 .footer_contact {
+	margin: 0 auto;
+	max-width: 800px;
+	flex-basis: 45%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin: 107px 55px 28px 0;
+	justify-content: center;
 }
 .footer_contact h3 {
 	font-weight: 600;
@@ -363,7 +368,7 @@ button:disabled {
 	background: #b3a37f;
 	position: fixed;
 	top: 50px;
-	left: 50px;
+	left: calc(50vw - 600px);
 	max-width: 1200px;
 	display: none;
 	flex-direction: column;
@@ -648,15 +653,18 @@ main {
 }
 /* RESPONSIVE */
 
+@media (min-width: 1510px) {
+	.footer_map {
+		width: 100%;
+		max-width: 800px;
+	}
+}
 @media (max-width: 1510px) {
 	.info-box_right {
 		font-size: 30px;
 	}
 }
 @media (max-width: 1440px) {
-	.footer_contact {
-		margin-right: 70px;
-	}
 	.text-block {
 		padding-top: 100px;
 	}
@@ -710,7 +718,7 @@ main {
 		margin-left: auto;
 	}
 	.footer_contact {
-		margin-right: 80px;
+		/* margin-right: 80px; */
 	}
 	.footer_contact h3 {
 		font-size: 32px;
@@ -744,7 +752,7 @@ main {
 		max-width: 650px;
 	}
 	.footer_contact {
-		margin-right: 80px;
+		/* margin-right: 80px; */
 	}
 	.phone {
 		font-size: 16px;
@@ -781,7 +789,7 @@ main {
 		line-height: 3rem;
 	}
 	.footer_contact {
-		margin-right: 40px;
+		/* margin-right: 40px; */
 	}
 	.header_carInfoT1 {
 		height: 490px;
@@ -798,7 +806,7 @@ main {
 }
 @media (max-width: 1024px) {
 	.footer_contact {
-		margin-right: 10px;
+		/* margin-right: 10px; */
 	}
 	.about-box_left img {
 		max-width: 545px;
@@ -881,6 +889,9 @@ main {
 		background-size: cover;
 		background-position: center;
 	}
+	.footer {
+		max-height: fit-content;
+	}
 	.footer_map iframe {
 		max-width: 100%;
 	}
@@ -888,10 +899,9 @@ main {
 		margin-bottom: 30px;
 	}
 	.footer_contact {
-		margin: 0;
+		width: 100vw;
+		margin: 0 auto;
 		padding: 50px;
-		background: url('img/text-bg.png') no-repeat;
-		background-size: cover;
 	}
 	.carInfo_img-box {
 		width: 100%;
