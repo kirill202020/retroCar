@@ -811,6 +811,12 @@ main {
 	.carInfo-title h2 {
 		font-size: 28px;
 	}
+	.carInfo-title {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
 	.main-pic {
 		width: 100%;
 	}
@@ -971,9 +977,19 @@ main {
 		gap: 50px;
 		flex-direction: column;
 	}
+	.reserve_img_title {
+		font-size: 38px;
+	}
+	.reserve_img_text {
+		font-size: 28px;
+		line-height: 2.5cap;
+	}
 }
 
 @media (max-width: 900px) {
+	.reserve_img-box {
+		padding: 50px;
+	}
 	.slider-container {
 		transform: translateX(100px);
 	}
@@ -992,6 +1008,9 @@ main {
 	}
 	.header {
 		height: 45vh;
+	}
+	.header_carInfoT1 {
+		height: 40vh;
 	}
 	.modal {
 		z-index: 1000;
@@ -1033,6 +1052,13 @@ main {
 }
 
 @media (max-width: 720px) {
+	.reserve_img_title {
+		font-size: 32px;
+	}
+	.reserve_img_text {
+		font-size: 22px;
+	}
+
 	.text-block {
 		padding: 40px 50px;
 	}
@@ -1061,6 +1087,15 @@ main {
 	}
 }
 @media (max-width: 600px) {
+	.slider {
+		gap: 0px;
+	}
+	.carInfo-title h2 {
+		font-size: 18px;
+	}
+	.carInfo-btn {
+		font-size: 18px;
+	}
 	.text-block {
 		padding: 40px 30px;
 	}
