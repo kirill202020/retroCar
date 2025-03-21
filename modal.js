@@ -1,6 +1,6 @@
 const btnLetter = document.querySelector('.online-letter'),
-	modalWin = document.querySelector('.modal')
-btnClose = document.querySelector('.btn-close')
+	modalWin = document.querySelector('.modal'),
+	burgerInput = document.querySelector('#menuCheckbox')
 
 function openModal() {
 	modalWin.style.display = 'flex'
@@ -23,8 +23,9 @@ function openModal() {
     placeholder="Komentář k objednávce"
     ></textarea>
     </form>
-    <a  onclick="close()" class="btn thema-btn modal-btn" href="#">odeslat</a>
+    <a  onclick="closeModal()" class="btn thema-btn modal-btn" href="#">odeslat</a>
     `
+	burgerInput.checked = false
 }
 btnLetter.addEventListener('click', () => {
 	modalWin.style.display = 'flex'
@@ -47,9 +48,10 @@ btnLetter.addEventListener('click', () => {
     placeholder="Komentář k objednávce"
     ></textarea>
     </form>
-        <a  onclick="close()" class="btn thema-btn modal-btn" href="#">odeslat</a>
+        <a  onclick="closeModal()" class="btn thema-btn modal-btn" href="#">odeslat</a>
 
     `
+	burgerInput.checked = false
 })
 
 function closeModal() {
