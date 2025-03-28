@@ -142,7 +142,7 @@
 
 			<section class="review">
 				<h2 class="review-title">RECENZE</h2>
-				<div class="slider-container">
+				<!-- <div class="slider-container">
 					<div class="slider">
 						<div class="card">
 							<img src="img/user.png" alt="" class="profile-img" />
@@ -163,35 +163,81 @@
 								</div>
 							</div>
 						</div>
-						<div class="card">
-							<img src="img/user.png" alt="" class="profile-img" />
-							<div class="card-body">
-								<p class="card_name">Анна П.</p>
-								<div class="card_span-box">
-									<span class="grade">★★★★☆</span>
-									<span class="date">10.03.2025</span>
-								</div>
-								<div class="card_main-text">
-									<p>Dolor eveniet repellat? Aut reiciendis amet rem.</p>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<img src="img/user.png" alt="" class="profile-img" />
-							<div class="card-body">
-								<p class="card_name">Сергей М.</p>
-								<div class="card_span-box">
-									<span class="grade">★★★★★</span>
-									<span class="date">05.03.2025</span>
-								</div>
-								<div class="card_main-text">
-									<p>Neque dicta dolores non dolor eveniet repellat?</p>
-								</div>
-							</div>
-						</div>
 					</div>
-				</div>
-				<div class="slider-dots"></div>
+				</div> -->
+				<swiper-container
+					class="mySwiper"
+					pagination="true"
+					pagination-clickable="true"
+					navigation="true"
+					space-between="30"
+					loop="true"
+					responsive="true"
+				>
+					<swiper-slide>
+						<div class="card">
+							<img src="img/user.png" alt="" class="profile-img" />
+							<div class="card-body">
+								<p class="card_name">Иван К.</p>
+								<div class="card_span-box">
+									<span class="grade">★★★☆☆</span>
+									<span class="date">15.03.2025</span>
+								</div>
+								<div class="card_main-text">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.0
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Libero, modi!Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit.0 Lorem ipsum dolor sit amet, consectetur
+										adipisicing elit. Libero, modi!
+									</p>
+								</div>
+							</div>
+						</div>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="card">
+							<img src="img/user.png" alt="" class="profile-img" />
+							<div class="card-body">
+								<p class="card_name">Иван К.</p>
+								<div class="card_span-box">
+									<span class="grade">★★★☆☆</span>
+									<span class="date">15.03.2025</span>
+								</div>
+								<div class="card_main-text">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.0
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Libero, modi!Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit.0 Lorem ipsum dolor sit amet, consectetur
+										adipisicing elit. Libero, modi!
+									</p>
+								</div>
+							</div>
+						</div>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="card">
+							<img src="img/user.png" alt="" class="profile-img" />
+							<div class="card-body">
+								<p class="card_name">Иван К.</p>
+								<div class="card_span-box">
+									<span class="grade">★★★☆☆</span>
+									<span class="date">15.03.2025</span>
+								</div>
+								<div class="card_main-text">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.0
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Libero, modi!Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit.0 Lorem ipsum dolor sit amet, consectetur
+										adipisicing elit. Libero, modi!
+									</p>
+								</div>
+							</div>
+						</div>
+					</swiper-slide>
+				</swiper-container>
 				<a class="btn thema-btn review-btn" href="#">ZANECHAT RECENZI</a>
 			</section>
 		</main>
@@ -227,7 +273,7 @@
 			</div>
 		</footer>
 
-		<script src="slider.js"></script>
 		<script src="modal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 	</body>
 </html>
